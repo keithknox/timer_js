@@ -13,3 +13,11 @@ start.addEventListener("click", function(evt){
       timer.innerHTML = "Time Elapsed: " + begin;
       }, 1000);
     })
+
+reset.addEventListener("click", function(evt){
+    event.preventDefault();
+    addTime = clearInterval(addTime);
+    timer.innerHTML = "Stop Watch"
+    })
+
+    
