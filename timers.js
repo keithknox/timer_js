@@ -20,4 +20,7 @@ reset.addEventListener("click", function(evt){
     timer.innerHTML = "Stop Watch"
     })
 
-    
+pause.addEventListener("click", function(evt){
+    event.preventDefault();
+    clearInterval(addTime);
+    })
